@@ -38,8 +38,8 @@ class SideNav extends React.Component {
                     key: 3
                   },
                   {
-                    path: '/datasources',
-                    name: 'datasource',
+                    path: '/datasets',
+                    name: 'datasets',
                     css: 'fa fa-database',
                     key: 4
                   },
@@ -50,8 +50,8 @@ class SideNav extends React.Component {
                     key: 5 
                   },
                   {
-                    path: '/roles',
-                    name: 'user roles',
+                    path: '/jobs',
+                    name: 'jobs',
                     css: 'fa fa-user-secret',
                     key: 6
                   },
@@ -60,12 +60,6 @@ class SideNav extends React.Component {
                     name: 'connectors',
                     css: 'fa fa-plug',
                     key:7 
-                  },
-                  {
-                    path: '/sessions',
-                    name: 'active sessions',
-                    css: 'fa fa-cog',
-                    key: 8
                   }
 
               ]

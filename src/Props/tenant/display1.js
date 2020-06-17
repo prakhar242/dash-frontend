@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Container, Grid, Header, List } from "semantic-ui-react";
 
 
-class display extends Component {
+class display1 extends Component {
     constructor(props) {
         super(props);
     }
@@ -22,6 +22,7 @@ class display extends Component {
                       <List.Content>
                          ID : {el._id} &nbsp; &nbsp;
                         Name : {el.name} &nbsp; &nbsp;
+                        Data : {el.data}
                       </List.Content>
                     </List.Item>
                   );
@@ -35,4 +36,4 @@ class display extends Component {
   }
 }
 
-export default display;
+export default display1;
