@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Grid, Header, List } from "semantic-ui-react";
+import './display.css'
 
 
 class display1 extends Component {
@@ -8,13 +9,15 @@ class display1 extends Component {
     }
 
   render() {
-    const { count , details } = this.props;
+    const {searchId, details } = this.props;
+    console.log(searchId);
     return (
       <Container>
         <Grid>
           <Grid.Row>
             <Grid.Column>
-              <Header> Total No. of Documents: {count}</Header>
+    <Header> Total No. of Users for tenant Id {searchId} is: {details.length}</Header>
+              <div class="cont">
               <List bulleted>
                 {details.map(el => {
                   return (
@@ -28,6 +31,7 @@ class display1 extends Component {
                   );
                 })}
               </List>
+              </div>
             </Grid.Column>
           </Grid.Row>
         </Grid>
