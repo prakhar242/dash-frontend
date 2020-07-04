@@ -10,7 +10,6 @@ class display1 extends Component {
 
   render() {
     const {searchId, details } = this.props;
-    console.log(searchId);
     return (
       <Container>
         <Grid>
